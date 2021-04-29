@@ -32,9 +32,21 @@
       "pluginOptions": {}
     },
     "user": {
+      "via": "stores",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "stores"
+      "model": "user"
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "telephone": {
+      "type": "string",
+      "required": true
+    },
+    "products": {
+      "via": "store",
+      "collection": "products"
     }
   }
 }
